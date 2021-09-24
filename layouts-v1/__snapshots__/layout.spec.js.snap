@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout Layout component should render without throwing an error 1`] = `
+<IntlProvider
+  locale="en"
+  messages={
+    Object {
+      "content": Object {
+        "common": Object {
+          "nav": Object {
+            "home": "Home",
+            "manageBooking": "Manage Booking",
+            "myAccount": "My Account",
+          },
+          "navFooter": Object {},
+          "title": "Fly Better",
+        },
+        "flight-routes-v1": Object {
+          "card": Object {
+            "arrivalTitle": "Arrival",
+            "ctaTitle": "Select",
+            "departureTitle": "Departure",
+          },
+          "resultsTitle": "Search Results",
+          "section": "Flight Routes",
+          "title": "Flight Routes",
+        },
+        "seo": Object {
+          "copyright": "© 2021 Airlines. All Rights Reserved.",
+          "description": "Flight routes shows possible flights scheduled",
+          "htmlClass": "ek",
+          "htmlDir": "rtl",
+          "keywords": "Flight routes",
+          "myLanguageType": "englishUTF8",
+        },
+      },
+    }
+  }
+>
+  <Layout />
+</IntlProvider>
+`;

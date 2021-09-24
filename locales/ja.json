@@ -1,0 +1,34 @@
+{
+    "content": {
+        "common": {
+            "title": "Fly Better",
+            "nav": {
+                "home" : "Home",
+                "manageBooking": "Manage Booking",
+                "myAccount": "My Account"
+            },
+            "navFooter":{
+                
+            }
+        },
+        "seo": {
+            "htmlClass": "ek",
+            "htmlDir": "rtl",
+            "myLanguageType": "englishUTF8",
+            "copyright": "© 2021 Airlines. All Rights Reserved.",
+            "keywords": "Flight routes",
+            "description": "Flight routes shows possible flights scheduled"
+ 
+        },
+        "flight-routes-v1":{
+            "section": "Flight Routes",
+            "title": "Flight Routes",
+            "resultsTitle": "Search Results",
+            "card": {
+                "departureTitle": "Departure",
+                "arrivalTitle": "Arrival",
+                "ctaTitle": "Select"
+            }    
+        }
+    }
+}
