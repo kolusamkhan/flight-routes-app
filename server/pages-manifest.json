@@ -1,0 +1,19 @@
+{
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
+  "/api/routes/flight-routes": "pages/api/routes/flight-routes.js",
+  "/flight-routes-v1": "pages/flight-routes-v1.js",
+  "/_error": "pages/_error.js",
+  "/en/404": "pages/en/404.html",
+  "/ja/404": "pages/ja/404.html",
+  "/ru-RU/404": "pages/ru-RU/404.html",
+  "/ar-AE/404": "pages/ar-AE/404.html",
+  "/en/500": "pages/en/500.html",
+  "/ja/500": "pages/ja/500.html",
+  "/ru-RU/500": "pages/ru-RU/500.html",
+  "/ar-AE/500": "pages/ar-AE/500.html",
+  "/en/_offline": "pages/en/_offline.html",
+  "/ja/_offline": "pages/ja/_offline.html",
+  "/ru-RU/_offline": "pages/ru-RU/_offline.html",
+  "/ar-AE/_offline": "pages/ar-AE/_offline.html"
+}

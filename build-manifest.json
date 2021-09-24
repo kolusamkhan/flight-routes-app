@@ -1,0 +1,40 @@
+{
+  "polyfillFiles": [
+    "static/chunks/polyfills-a40ef1678bae11e696dba45124eadd70.js"
+  ],
+  "devFiles": [],
+  "ampDevFiles": [],
+  "lowPriorityFiles": [
+    "static/8Stu1ZZZIENBpJVacvVCW/_buildManifest.js",
+    "static/8Stu1ZZZIENBpJVacvVCW/_ssgManifest.js"
+  ],
+  "pages": {
+    "/_app": [
+      "static/chunks/webpack-fb76148cfcfb42ca18eb.js",
+      "static/chunks/framework-895f067827ebe11ffe45.js",
+      "static/chunks/main-d7717f8943d8ac2dad93.js",
+      "static/css/1bd090d479fe08167ec8.css",
+      "static/chunks/pages/_app-ae1338448f8a8f557a11.js"
+    ],
+    "/_error": [
+      "static/chunks/webpack-fb76148cfcfb42ca18eb.js",
+      "static/chunks/framework-895f067827ebe11ffe45.js",
+      "static/chunks/main-d7717f8943d8ac2dad93.js",
+      "static/chunks/pages/_error-737a04e9a0da63c9d162.js"
+    ],
+    "/_offline": [
+      "static/chunks/webpack-fb76148cfcfb42ca18eb.js",
+      "static/chunks/framework-895f067827ebe11ffe45.js",
+      "static/chunks/main-d7717f8943d8ac2dad93.js",
+      "static/chunks/pages/_offline-ad086aaa4b8752465006.js"
+    ],
+    "/flight-routes-v1": [
+      "static/chunks/webpack-fb76148cfcfb42ca18eb.js",
+      "static/chunks/framework-895f067827ebe11ffe45.js",
+      "static/chunks/main-d7717f8943d8ac2dad93.js",
+      "static/css/ebbca76cf495780a5db5.css",
+      "static/chunks/pages/flight-routes-v1-24c0dcabaa6ee9483604.js"
+    ]
+  },
+  "ampFirstPages": []
+}
