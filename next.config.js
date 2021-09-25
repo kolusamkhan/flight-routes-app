@@ -1,11 +1,13 @@
 const path = require('path');
 const withPWA = require('next-pwa');
+const debug = process.env.NODE_ENV !== 'production'
 module.exports = withPWA({
   pwa: {
     dest: 'public',
     disable: process.env.NODE_ENV === 'development',
     //scope: '/app',
   },
+  assetPrefix: !debug ? '/flight-routes-app/' : '',
   reactStrictMode: true,
   excludeFile: (str) => /\*.{spec,test}.js/.test(str),
   env: {

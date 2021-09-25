@@ -4,10 +4,10 @@
   "private": true,
   "homepage": "http://kolusamkhan.github.io/flight-routes-app",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next",
     "dev:debug": "cross-env NODE_OPTIONS=--inspect next dev -p 8000",
     "build": "next build",
-    "start": "cross-env NODE_OPTIONS=--inspect next start -p 8000",
+    "start": "next start",
     "lint": "next lint",
     "lint-fix": "next lint --fix",
     "style-lint": "stylelint **/*.(s)css",
@@ -21,7 +21,9 @@
     "test": "jest --forceExit",
     "precommit": "npm-run-all lint style-lint test:ci",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d .next"
+    "deploy1": "gh-pages -d .next",
+    "export": "next export",
+    "deploy": "rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll && git add out/ && git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin gh-pages"
   },
   "pre-commit": [
     "lint",
@@ -41,6 +43,7 @@
     "audit-ci": "^4.1.0",
     "babel-core": "^6.26.3",
     "babel-jest": "^27.2.1",
+    "babel-plugin-transform-define": "^2.0.1",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "cross-env": "^7.0.3",
