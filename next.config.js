@@ -10,9 +10,8 @@ module.exports = withPWA({
   excludeFile: (str) => /\*.{spec,test}.js/.test(str),
   env: {
     API_ROUTES_ENDPOINT: 'api/routes/flight-routes',
-    APP_PROTOCOLO: 'http',
-    APP_HOST: 'localhost',
-    APP_PORT: '8000',
+    APP_PROTOCOLO: 'https',
+    APP_HOST: 'flight-routes-app-1vkawe19e-kolusamkhan.vercel.app',
     RTL_LANGUAGE_CODES: 'ar,ku,ur,fa,he',
     APP_MODE: 'production'
   },

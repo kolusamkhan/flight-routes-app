@@ -4,6 +4,7 @@ import Layout from '../layouts-v1';
 
 function MyApp(props) {
   const { Component, pageProps } = props;
+  console.log("@MyApp env ", process.env);
   return (
     <>
       <NextIntlProvider messages={pageProps.messages}>
