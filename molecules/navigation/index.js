@@ -13,7 +13,7 @@ export default function Navigation() {
                     </div>
                     <div className={styles.menu}>
                         <ul>
-                            <li><a className={styles.link} href="#"> {t("common.nav.home")}</a></li>
+                            <li><a className={styles.link} href='/'> {t("common.nav.home")}</a></li>
                             <li><a className={styles.link} href="#">{t("common.nav.manageBooking")}</a></li>
                             <li><a className={styles.link} href="#">{t("common.nav.myAccount")}</a></li>
                         </ul>

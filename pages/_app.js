@@ -1,10 +1,9 @@
 import { NextIntlProvider } from 'next-intl';
 import '../styles/global.css'
-import Layout from '../layouts-v1';
+import Layout from '../layouts';
 
 function MyApp(props) {
   const { Component, pageProps } = props;
-  console.log("@MyApp env ", process.env);
   return (
     <>
       <NextIntlProvider messages={pageProps.messages}>

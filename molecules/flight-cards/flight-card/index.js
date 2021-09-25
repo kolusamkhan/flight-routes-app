@@ -1,7 +1,7 @@
-import Image from 'next/image'
 import { useTranslations } from 'next-intl';
 import format from "../../../utils/helper";
 import styles from './flight-card.module.scss';
+import Button from '../../../atoms/button';
 export default function FlightCard(props)
 {
  const t = useTranslations('content');
@@ -37,12 +37,11 @@ return(
         <div className={styles.flight_tail_img}>
             <img src={`/${(flightCard?.operator)}.svg`.toLowerCase()} alt={flightCard?.operator}/>
         </div>
-
         <div className={styles.action_airport_code}>
             <span>{flightCard?.origin}</span><span>-</span><span>{flightCard?.destination}</span>
         </div>
         <div className={`${styles.action_cta} ${selectionState?'.action_cta-selected': ""}`}>
-            <button onClick={(e)=>clickHander(index, e)} className={`${styles.action_cta_button} ${selectionState?"action_cta_button selected": ""}`}>{t(`${pageName}.card.ctaTitle`)}</button>
+            <Button onClick={(e)=>clickHander(index, e)} className={`${selectionState?"action_cta selected": ""}`} title={t(`${pageName}.card.ctaTitle`)}></Button>
         </div>
     </div>
 </div>

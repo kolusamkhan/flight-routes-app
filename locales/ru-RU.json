@@ -28,9 +28,29 @@
                 "departureTitle": "Вылет из",
                 "arrivalTitle": "Пребытие",
                 "ctaTitle": "Выбирать"
-            }    
+            },
+            "navCard": {
+                "todayFlightTitle" : "Today's Flight",
+                "tomorrowFlightTitle" : "Tomorrow's Flight",
+                "viewResultsTitle": "View Resutls"
+            }  
         },
-        "_flight-routes-v1":{
+        "_home":{
+            "section": "Flight Routes",
+            "title": "Маршруты полетов",
+            "resultsTitle": "результаты поиска",
+            "card": {
+                "departureTitle": "Вылет из",
+                "arrivalTitle": "Пребытие",
+                "ctaTitle": "Выбирать"
+            },
+            "navCard": {
+                "todayFlightTitle" : "Today's Flight",
+                "tomorrowFlightTitle" : "Tomorrow's Flight",
+                "viewResultsTitle": "View Resutls"
+            }  
+        },
+        "_flight-routes":{
             "section": "Flight Routes",
             "title": "Маршруты полетов",
             "resultsTitle": "результаты поиска",

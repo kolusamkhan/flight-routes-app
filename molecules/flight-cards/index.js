@@ -11,7 +11,7 @@ export default function FlightCards (props) {
     }
     return (
         <>
-        <div className={styles.page_title}>
+        <div className="page_title">
             <h1>{t(`${pageName}.resultsTitle`)} (<span>{flightCards?.length}</span>)</h1>
         </div>
         <div className={styles.search_results}>
