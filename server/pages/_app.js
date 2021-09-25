@@ -188,13 +188,10 @@ function Navigation() {
 // EXTERNAL MODULE: ./layouts-v1/layout.module.scss
 var layout_module = __webpack_require__(315);
 var layout_module_default = /*#__PURE__*/__webpack_require__.n(layout_module);
-// EXTERNAL MODULE: ./node_modules/next/image.js
-var next_image = __webpack_require__(675);
 // EXTERNAL MODULE: ./molecules/footer/footer.module.scss
 var footer_module = __webpack_require__(497);
 var footer_module_default = /*#__PURE__*/__webpack_require__.n(footer_module);
 ;// CONCATENATED MODULE: ./molecules/footer/index.js
-
 
 
 
@@ -207,7 +204,7 @@ function Footer() {
       rel: "noopener noreferrer",
       children: ["Powered by", ' ', /*#__PURE__*/jsx_runtime_.jsx("span", {
         className: (footer_module_default()).logo,
-        children: /*#__PURE__*/jsx_runtime_.jsx(next_image.default, {
+        children: /*#__PURE__*/jsx_runtime_.jsx("img", {
           src: "/vercel.svg",
           alt: "Vercel Logo",
           width: 72,
@@ -310,38 +307,6 @@ module.exports = require("next-intl");
 
 /***/ }),
 
-/***/ 822:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("next/dist/server/image-config.js");
-
-/***/ }),
-
-/***/ 695:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("next/dist/shared/lib/head.js");
-
-/***/ }),
-
-/***/ 556:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("next/dist/shared/lib/to-base-64.js");
-
-/***/ }),
-
-/***/ 297:
-/***/ ((module) => {
-
-"use strict";
-module.exports = require("react");
-
-/***/ }),
-
 /***/ 282:
 /***/ ((module) => {
 
@@ -357,7 +322,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [675], () => (__webpack_exec__(809)));
+var __webpack_exports__ = (__webpack_exec__(809));
 module.exports = __webpack_exports__;
 
 })();

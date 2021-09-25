@@ -3,6 +3,7 @@
   "/_document": "pages/_document.js",
   "/api/routes/flight-routes": "pages/api/routes/flight-routes.js",
   "/flight-routes-v1": "pages/flight-routes-v1.js",
+  "/": "pages/index.js",
   "/_error": "pages/_error.js",
   "/en/404": "pages/en/404.html",
   "/ja/404": "pages/ja/404.html",
