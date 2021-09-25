@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import { useTranslations } from 'next-intl';
-import FlightRoutes from '../../organisms/flight-routes';
-import {createURL} from '../../utils/helper'; 
-import {APP_ENV} from '../../utils/constants';
+import FlightRoutes from '../organisms/flight-routes';
+import {createURL} from '../utils/helper'; 
+import {APP_ENV} from '../utils/constants';
 
 export default function PageFlightRoutes(props) {
   const {routes, pageName} = props;
@@ -27,7 +27,7 @@ PageFlightRoutes.getInitialProps = async function getInitialProps(ctx) {
   const flightRoutesRes = await fetch(apiRoutesEndpointUrl);
   const flightRoutes = await flightRoutesRes.json();
   ctx.appData = flightRoutes.data?.flightRouteResponse?.routes;
-  const messages = require(`../../locales/${locale}.json`);
+  const messages = require(`../locales/${locale}.json`);
   ctx.messages = messages;
   return( {
           routes: ctx.appData,
