@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { useTranslations } from 'next-intl';
 import FlightRoutes from '../../organisms/flight-routes';
-import {createURL} from '../../utils/helper'; 
+import {createURL, formatPageName} from '../../utils/helper'; 
 import {APP_ENV} from '../../utils/constants';
 
 export default function PageFlightRoutes(props) {
@@ -20,7 +20,7 @@ export default function PageFlightRoutes(props) {
 PageFlightRoutes.getInitialProps = async function getInitialProps(ctx) {
 
   const {locale} = ctx;
-  const pageName = ctx.pathname?.replace('/','');
+  const pageName = formatPageName(ctx.pathname);
   const apiRoutesEndpoint = APP_ENV.API_ROUTES_ENDPOINT || '/api/routes/flight-routes';
   const apiRoutesEndpointUrl = createURL(apiRoutesEndpoint);
   console.log('getinitialprops',apiRoutesEndpointUrl);
@@ -38,16 +38,14 @@ PageFlightRoutes.getInitialProps = async function getInitialProps(ctx) {
 }
 
 /*
-export async function getServerSideProps(ctx) {
-  const apiRoutesEndpoint = APP_ENV.API_ROUTES_ENDPOINT || '/api/routes/flight-routes';
-  const apiRoutesEndpointUrl = createURL(apiRoutesEndpoint);
-  console.log('getinitialprops',apiRoutesEndpointUrl);
-  const flightRoutesRes = await fetch(apiRoutesEndpointUrl);
-  const flightRoutes = await flightRoutesRes.json();
-  ctx.appData = flightRoutes.data?.flightRouteResponse?.routes;
-  return( {
-          routes: ctx.appData
-      }
-  )
-}
+export async function getStaticProps(ctx) {
+  
+  return({
+      props: {
+          routes: [],
+          messages : {},
+          pageName: ctx.pathname? ctx.pathname: '/'
+      },
+  });
+};
 */

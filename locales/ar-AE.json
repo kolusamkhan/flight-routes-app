@@ -19,7 +19,18 @@
            "keywords": "Flight routes",
            "description": "Flight routes shows possible flights scheduled"
         },
-        "flight-routes-v1":{
+        "_":{
+            "section": "Flight Routes",
+            "title": "Маршруты полетов",
+            "resultsTitle": "результаты поиска",
+            "card": {
+                "departureTitle": "Вылет из",
+                "arrivalTitle": "Пребытие",
+                "ctaTitle": "Выбирать"
+
+            }    
+        },
+        "_flight-routes-v1":{
             "section": "Flight Routes",
             "title": "Маршруты полетов",
             "resultsTitle": "результаты поиска",

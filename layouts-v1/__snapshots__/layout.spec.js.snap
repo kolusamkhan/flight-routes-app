@@ -15,24 +15,16 @@ exports[`Layout Layout component should render without throwing an error 1`] = `
           "navFooter": Object {},
           "title": "Fly Better",
         },
-        "flight-routes-v1": Object {
+        "pageFlightRoutes": Object {
           "card": Object {
             "arrivalTitle": "Arrival",
             "ctaTitle": "Select",
             "departureTitle": "Departure",
           },
           "resultsTitle": "Search Results",
-          "section": "Flight Routes",
           "title": "Flight Routes",
         },
-        "seo": Object {
-          "copyright": "© 2021 Airlines. All Rights Reserved.",
-          "description": "Flight routes shows possible flights scheduled",
-          "htmlClass": "ek",
-          "htmlDir": "rtl",
-          "keywords": "Flight routes",
-          "myLanguageType": "englishUTF8",
-        },
+        "seo": Object {},
       },
     }
   }

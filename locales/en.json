@@ -20,7 +20,17 @@
             "description": "Flight routes shows possible flights scheduled"
  
         },
-        "flight-routes-v1":{
+        "_":{
+            "section": "Flight Routes",
+            "title": "Flight Routes",
+            "resultsTitle": "Search Results",
+            "card": {
+                "departureTitle": "Departure",
+                "arrivalTitle": "Arrival",
+                "ctaTitle": "Select"
+            }    
+        },
+        "_flight-routes-v1":{
             "section": "Flight Routes",
             "title": "Flight Routes",
             "resultsTitle": "Search Results",

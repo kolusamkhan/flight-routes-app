@@ -8,9 +8,11 @@ const format = (date) => {
     const newDate = new Date(date);
     return dateFormat(newDate, "fullDate");
 }
-export const createURL = (relativeUrl) => {
-    return `${APP_ENV.APP_PROTOCOLO}://${APP_ENV.APP_HOST}:${APP_ENV.APP_PORT}/${relativeUrl}`;
-}
+
+export const isProduction = () => process?.env?.NODE_ENV === 'production';
+
+export const createURL = (relativeUrl) => `${APP_ENV.APP_PROTOCOLO}://${APP_ENV.APP_HOST}${!!APP_ENV.APP_PORT ? `:${APP_ENV.APP_PORT}`:''}/${relativeUrl}`;
+
 export default format;
 
 export const getLanguageDirection = locale => {
@@ -30,13 +32,26 @@ export const getLanguageDirection = locale => {
 }
 
 export const getMessageContent = (props) =>{
-    return props?.__NEXT_DATA__?.props?.pageProps?.messages?.content;
+    try{
+        return props?.__NEXT_DATA__?.props?.pageProps?.messages?.content;
+    }
+    catch(e) {
+        console.log("@getMessageContent : An error has occured on processing data.", JSON.stringify(e))
+        return {}
+    }
 }
 
-export const getPageName = (props) =>{
+export const formatPageName = (pageName) => !pageName?pageName : pageName.replace("/", "_");
 
-    const pageName = props?.__NEXT_DATA__?.page;
-    if(!pageName)
-        return pageName;
-    return (pageName?.replace("/",""));
+export const getPageName = (props) =>{
+    try{
+        const pageName = props?.__NEXT_DATA__?.page;
+        return formatPageName(pageName);
+    }
+    catch(e) {
+        console.log("@getPageName : An error has occured on processing data.", JSON.stringify(e))
+        return "_";
+    }
+
+    
 }
