@@ -11,7 +11,7 @@ const format = (date) => {
 
 export const isProduction = () => process?.env?.NODE_ENV === 'production';
 
-export const createURL = (relativeUrl) => `${APP_ENV.APP_PROTOCOLO}://${APP_ENV.APP_HOST}${!!APP_ENV.APP_PORT ? `:${APP_ENV.APP_PORT}`:''}/${relativeUrl}`;
+export const createURL = (relativeUrl) => `${APP_ENV.APP_PROTOCOL}://${APP_ENV.APP_HOST}${!!APP_ENV.APP_PORT ? `:${APP_ENV.APP_PORT}`:''}/${relativeUrl}`;
 
 export default format;
 

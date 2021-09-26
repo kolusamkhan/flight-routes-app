@@ -25,6 +25,7 @@
         font-size: 2.4rem;
         font-weight: 700;
         margin-left: 20px;
+        WHITE-SPACE: NOWRAP;
       }
     }
 
@@ -45,13 +46,12 @@
 
           a {
             color: #0c0000eb;
-            font-size: 1.2rem;
+            font-size: 1.6rem;
             text-decoration: none;
           }
 
           :hover {
-            color: #0c000075;
-            font-size: 1.2rem;
+            color: #4050b5;
             text-decoration: none;
           }
         }

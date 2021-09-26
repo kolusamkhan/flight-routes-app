@@ -47,7 +47,7 @@
             "navCard": {
                 "todayFlightTitle" : "Today's Flight",
                 "tomorrowFlightTitle" : "Tomorrow's Flight",
-                "viewResultsTitle": "View Resutls"
+                "viewResultsTitle": "View Results"
             }  
         },
         "_flight-routes":{

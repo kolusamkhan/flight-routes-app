@@ -17,7 +17,7 @@ body {
 
 .card-selected {
   /* stylelint-disable */
-  @include color-border-with-priority(1px, #059611);
+  border: 1px solid #059611 !important;
 }
 
 .action_cta-selected {
