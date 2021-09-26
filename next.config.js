@@ -11,7 +11,7 @@ module.exports = withPWA({
   env: {
     API_ROUTES_ENDPOINT: 'api/routes/flight-routes',
     APP_PROTOCOLO: 'https',
-    APP_HOST: 'flight-routes-app-1vkawe19e-kolusamkhan.vercel.app',
+    APP_HOST: 'flight-routes-app.vercel.app',
     RTL_LANGUAGE_CODES: 'ar,ku,ur,fa,he',
     APP_MODE: 'production',
     SHOW_RECORDS_COUNT: 10,
