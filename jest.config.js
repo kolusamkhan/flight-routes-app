@@ -6,7 +6,6 @@ module.exports = {
     __SAFE_RENDER__: true,
   },
   transform: {
-    //js$: '<rootDir>/jest/babel.config.js',
     '^.+\\.(js|jsx|ts|tsx)$': '<rootDir>/node_modules/babel-jest',
   },
   clearMocks: true,
@@ -35,18 +34,15 @@ module.exports = {
   },
   setupFilesAfterEnv: ["<rootDir>/enzyme.js"],
   setupFiles: [
-    //'./jest/jest-setup.js',
   ],
   snapshotSerializers: [
     'enzyme-to-json/serializer',
-    //'./jest/component-prop-serializer',
   ],
   roots: [
     '<rootDir>',
   ],
   modulePaths: [
     '<rootDir>',
-    //'<rootDir>/storybook',
   ],
   moduleNameMapper: {
     '^.+\\.(css|scss)$': 'identity-obj-proxy',

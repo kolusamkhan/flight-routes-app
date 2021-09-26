@@ -2,6 +2,11 @@ import { useTranslations } from 'next-intl';
 import format from "../../../utils/helper";
 import styles from './flight-card.module.scss';
 import Button from '../../../atoms/button';
+/**
+ * Flight Card component displays individual flight routes of the routes.
+ * @param {*} props 
+ * @returns 
+ */
 export default function FlightCard(props)
 {
  const t = useTranslations('content');

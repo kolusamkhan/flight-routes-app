@@ -2,6 +2,11 @@ import React from "react";
 import HomeCards from '../organisms/home-cards';
 import { formatPageName } from '../utils/helper';
 
+/**
+ * The home page of the application.
+ * @param {*} props 
+ * @returns 
+ */
 export default function Home(props) {
   const { pageName } = props;
   return (

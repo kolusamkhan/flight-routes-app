@@ -1,10 +1,10 @@
 import 'jsdom-global/register';
 import * as React from 'react';
 import expect from 'expect';
-import { shallow, mount, render } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import { shallowToJson } from 'enzyme-to-json';
 import FlightCards from './index';
-import { NextIntlProvider, useTranslations } from 'next-intl';
+import { NextIntlProvider } from 'next-intl';
 
 global.__DEV__ = true;
 jest.mock('next/router', () => ({

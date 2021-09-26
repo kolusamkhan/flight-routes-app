@@ -2,6 +2,11 @@ import { useTranslations } from 'next-intl';
 import HomeCard from './home-card';
 import styles from './home-cards.module.scss';
 
+/**
+ * Component displays Home card for search criteria.
+ * @param {*} props 
+ * @returns 
+ */
 export default function HomeCards(props) {
     const t = useTranslations('content');
     const { pageName } = props;

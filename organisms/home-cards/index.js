@@ -1,6 +1,12 @@
 import { useTranslations } from 'next-intl';
 import HomeCards from '../../molecules/home-cards';
 
+/**
+ * Home Cards organism to show the flight search criteria section, 
+ * being referred in home page.
+ * @param {*} props 
+ * @returns 
+ */
 export default function HomeCardsContainer(props) {
     const t = useTranslations('content');
     const { pageName } = props;

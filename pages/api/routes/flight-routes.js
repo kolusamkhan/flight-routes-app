@@ -1,8 +1,11 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+
 import flightRoutes from './flight_schedule.json';
 /**
- * Returns flight routes for the criteria matches.
- * @param {*} param0 
+ * This is API for handling flight routes.
+ * Accepts filter crieria as querystring, and returns flight routes that meets the criteria.
+ * # handles below scenarios #
+ * No data available for search |No matching found for criteria | any unhandled exception 
+ * @param {*} param
  * @param {*} res 
  */
 export default function handler({ query: { code } }, res) {

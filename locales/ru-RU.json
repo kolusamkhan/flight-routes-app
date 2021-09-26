@@ -1,7 +1,7 @@
 {
     "content": {
         "common": {
-            "title": "Летайте лучше",
+            "title": "Fly Better",
             "nav": {
                 "home" : "Дом",
                 "manageBooking": "Управление бронированием",
@@ -21,7 +21,7 @@
  
         },
         "_":{
-            "section": "Flight Routes",
+            "section": "Маршруты полетов",
             "title": "Маршруты полетов",
             "resultsTitle": "результаты поиска",
             "card": {
@@ -30,13 +30,13 @@
                 "ctaTitle": "Выбирать"
             },
             "navCard": {
-                "todayFlightTitle" : "Today's Flight",
-                "tomorrowFlightTitle" : "Tomorrow's Flight",
-                "viewResultsTitle": "View Results"
+                "todayFlightTitle" : "Сегодняшний полет",
+                "tomorrowFlightTitle" : "Завтрашний полет",
+                "viewResultsTitle": "Посмотреть Результаты"
             }  
         },
         "_home":{
-            "section": "Flight Routes",
+            "section": "Маршруты полетов",
             "title": "Маршруты полетов",
             "resultsTitle": "результаты поиска",
             "card": {
@@ -45,20 +45,21 @@
                 "ctaTitle": "Выбирать"
             },
             "navCard": {
-                "todayFlightTitle" : "Today's Flight",
-                "tomorrowFlightTitle" : "Tomorrow's Flight",
-                "viewResultsTitle": "View Resutls"
+                "todayFlightTitle" : "Сегодняшний полет",
+                "tomorrowFlightTitle" : "Завтрашний полет",
+                "viewResultsTitle": "Посмотреть Результаты"
             }  
         },
         "_flight-routes":{
-            "section": "Flight Routes",
+            "section": "Маршруты полетов",
             "title": "Маршруты полетов",
             "resultsTitle": "результаты поиска",
             "card": {
                 "departureTitle": "Вылет из",
                 "arrivalTitle": "Пребытие",
                 "ctaTitle": "Выбирать"
-            }    
+            },
+            "noResultsFound": "Маршруты полета не соответствуют критериям поиска. Пожалуйста, попробуйте позднее."    
         }
 
     }

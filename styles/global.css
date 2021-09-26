@@ -47,8 +47,30 @@ button.selected {
   box-sizing: border-box;
   margin: 20px 0;
   padding: 20px;
-  h1 {
-    color: #333;
-    font-size: 1.8rem;
-  }
+}
+.page_title h1 {
+  color: #333;
+  font-size: 1.8rem;
+}
+
+div.error {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  box-shadow: 0 0 4px #ccc;
+  box-sizing: border-box;
+  display: flex;
+  margin-top: 30px;
+  overflow: hidden;
+  padding: 50px 20px;
+  position: relative;
+  width: 100%;
+  align-content: center;
+}
+
+div.error p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #8d0203;
+  text-align: left;
+  padding-bottom: 1rem;
 }

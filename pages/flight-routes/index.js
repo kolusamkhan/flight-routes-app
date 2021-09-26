@@ -4,6 +4,11 @@ import FlightRoutes from '../../organisms/flight-routes';
 import {createURL, formatPageName} from '../../utils/helper'; 
 import {APP_ENV} from '../../utils/constants';
 
+/**
+ * This is page for flight routes search results page.
+ * @param {*} props 
+ * @returns 
+ */
 export default function PageFlightRoutes(props) {
   const {routes, pageName} = props;
   const t = useTranslations('content');

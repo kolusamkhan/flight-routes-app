@@ -2,11 +2,18 @@
   "name": "flight-routes-app",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name" : "Ajeerkhan Meerankani",
+    "email" : "ajeerkhan@gmail.com",
+    "url" : "https://www.linkedin.com/in/ajeerkhan/",
+    "git": "https://github.com/ajeerkhan"
+  },
   "scripts": {
     "dev": "next dev",
     "dev:debug": "cross-env NODE_OPTIONS=--inspect next dev -p 8000",
     "build": "next build",
     "start": "cross-env NODE_OPTIONS=--inspect next start -p 8000",
+    "export": "next export",
     "lint": "next lint",
     "lint-fix": "next lint --fix",
     "style-lint": "stylelint **/*.(s)css",

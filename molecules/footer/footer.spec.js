@@ -1,8 +1,7 @@
 import 'jsdom-global/register';
 import * as React from 'react';
-import { act } from 'react-dom/test-utils';
 import expect from 'expect';
-import { shallow, mount, render } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import { shallowToJson } from 'enzyme-to-json';
 import Footer from './index';
 
@@ -15,7 +14,7 @@ describe('Footer', () => {
     
     it('should render Footer content', function () {
         const wrapper =  mount(<div><Footer /></div>);
-        expect(wrapper.text()  === "Powered by ").toBeTruthy()
+        expect(wrapper.text().includes("Copyright")).toBeTruthy()
       })
   })  
 })

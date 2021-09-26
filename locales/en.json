@@ -38,8 +38,8 @@
         },
         "_home":{
             "section": "Flight Routes",
-            "title": "Маршруты полетов",
-            "resultsTitle": "результаты поиска",
+            "title": "Flight Routes",
+            "resultsTitle": "Flight Routes",
             "card": {
                 "departureTitle": "Вылет из",
                 "arrivalTitle": "Пребытие",
@@ -59,7 +59,8 @@
                 "departureTitle": "Departure",
                 "arrivalTitle": "Arrival",
                 "ctaTitle": "Select"
-            }    
+            },
+            "noResultsFound": "No Flight Routes are matching the search criteria. Please try later."
         }
     }
 }

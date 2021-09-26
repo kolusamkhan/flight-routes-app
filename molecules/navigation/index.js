@@ -1,6 +1,9 @@
 import { useTranslations } from 'next-intl';
-
 import styles from './navigation.module.scss';
+/**
+ * Navigation component for building top menu navigation.
+ * @returns 
+ */
 export default function Navigation() {
     const t = useTranslations('content');
     return (

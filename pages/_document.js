@@ -2,6 +2,12 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 import {getLanguageDirection, getMessageContent, getPageName} from '../utils/helper';
 import RenderClientDataAsJSON from '../utils/render-json';
 const ldJSON = require("../data/ld-json.json");
+/**
+ * This document build the html structure.
+ * place for adding head, meta data for SEO. 
+ * This runs only in server side.
+ * 
+ */
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx)
